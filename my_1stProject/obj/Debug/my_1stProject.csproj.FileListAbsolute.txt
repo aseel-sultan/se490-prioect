@@ -24,3 +24,14 @@ C:\Users\salos\Desktop\my project\my_1stProject\my_1stProject\obj\Debug\my_1stPr
 C:\Users\salos\Desktop\SE490 project\my_1stProject\bin\Debug\my_1stProject.exe.config
 C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.exe
 C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.pdb
+C:\Users\salos\Desktop\SE490 project\my_1stProject\bin\Debug\my_1stProject.exe
+C:\Users\salos\Desktop\SE490 project\my_1stProject\bin\Debug\my_1stProject.pdb
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.csprojResolveAssemblyReference.cache
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.forms.addUser.resources
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.forms.deletePage.resources
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.forms.loginpage.resources
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.forms.mainPage.resources
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.forms.updatePage.resources
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.forms.usersPage.resources
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.Properties.Resources.resources
+C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.csproj.GenerateResource.Cache

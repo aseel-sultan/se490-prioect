@@ -31,6 +31,7 @@
             this.add = new System.Windows.Forms.Button();
             this.update = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // add
@@ -75,6 +76,19 @@
             this.delete.UseVisualStyleBackColor = false;
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(293, 377);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 87);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "رجوع";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // usersPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -82,6 +96,7 @@
             this.BackgroundImage = global::my_1stProject.Properties.Resources.depositphotos_77833254_stock_illustration_restaurant_logo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1292, 524);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.update);
             this.Controls.Add(this.add);
@@ -96,5 +111,6 @@
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button update;
         private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button button1;
     }
 }
