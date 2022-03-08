@@ -41,8 +41,10 @@ namespace my_1stProject.forms
             // في مشكلة ان لما درت عرض هكي قعدت شاشة اليوزرس ماتسكرش 
             //ولما درت كلوز بعدها وجربت حتى قبلها قعدت تسكر وماتعرضش 
             mainPage main = new mainPage();
-            main.Show();
-            //this.Close();
+ main.Show();
+ this.Hide();
+           
+            
            
         }
 
