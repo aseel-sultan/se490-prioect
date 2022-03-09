@@ -45,12 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="app_code\DBcon.cs" />
+    <Compile Include="app_code\Departments.cs" />
     <Compile Include="app_code\users.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="forms\AddDep.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\AddDep.Designer.cs">
+      <DependentUpon>AddDep.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\addUser.cs">
       <SubType>Form</SubType>
@@ -64,6 +65,18 @@
     <Compile Include="forms\deletePage.Designer.cs">
       <DependentUpon>deletePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\DepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\DepForm.Designer.cs">
+      <DependentUpon>DepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ItemsSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ItemsSetting.Designer.cs">
+      <DependentUpon>ItemsSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\loginpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +88,12 @@
     </Compile>
     <Compile Include="forms\mainPage.Designer.cs">
       <DependentUpon>mainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\MessageFuns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\MessageFuns.Designer.cs">
+      <DependentUpon>MessageFuns.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\updatePage.cs">
       <SubType>Form</SubType>
@@ -90,17 +109,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\AddDep.resx">
+      <DependentUpon>AddDep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\addUser.resx">
       <DependentUpon>addUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\deletePage.resx">
       <DependentUpon>deletePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\DepForm.resx">
+      <DependentUpon>DepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ItemsSetting.resx">
+      <DependentUpon>ItemsSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\loginpage.resx">
       <DependentUpon>loginpage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\mainPage.resx">
       <DependentUpon>mainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\MessageFuns.resx">
+      <DependentUpon>MessageFuns.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\updatePage.resx">
       <DependentUpon>updatePage.cs</DependentUpon>

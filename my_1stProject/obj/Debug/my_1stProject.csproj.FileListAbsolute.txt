@@ -35,3 +35,17 @@ C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.forms
 C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.forms.usersPage.resources
 C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.Properties.Resources.resources
 C:\Users\salos\Desktop\SE490 project\my_1stProject\obj\Debug\my_1stProject.csproj.GenerateResource.Cache
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\bin\Debug\my_1stProject.exe.config
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.exe
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.pdb
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\bin\Debug\my_1stProject.exe
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\bin\Debug\my_1stProject.pdb
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.csprojResolveAssemblyReference.cache
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.addUser.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.deletePage.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.loginpage.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.mainPage.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.updatePage.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.usersPage.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.Properties.Resources.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.csproj.GenerateResource.Cache
