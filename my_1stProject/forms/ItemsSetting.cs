@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DepartmentForm.UI;
 
-namespace DepartmentForm
+namespace my_1stProject.forms
 {
     public partial class ItemsSetting : Form
     {
@@ -17,6 +17,8 @@ namespace DepartmentForm
         {
             InitializeComponent();
         }
+
+        
 
         private void lblItemsetting_Click(object sender, EventArgs e)
         {
@@ -37,6 +39,13 @@ namespace DepartmentForm
         {
 
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            mainPage m = new mainPage();
+            m.Show();
+            this.Close();
         }
 
         

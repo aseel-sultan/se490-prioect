@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DepartmentForm.App_Code;
+using my_1stProject.app_code;
 
-namespace DepartmentForm.UI
+namespace my_1stProject.forms
 {
     public partial class DepForm : Form
     {
@@ -17,6 +17,8 @@ namespace DepartmentForm.UI
         {
             InitializeComponent();
         }
+
+
 
         private void DepForm_Load(object sender, EventArgs e)
         {
@@ -27,10 +29,19 @@ namespace DepartmentForm.UI
         {
             
 
-            AddDep fdep = new AddDep();
-            fdep.Show();
-            DepForm fd = new DepForm();
-            fd.Hide();
+            
+        }
+
+        private void lblItemsetting_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ItemsSetting i = new ItemsSetting();
+            i.Show();
+            this.Close();
         }
     }
 }

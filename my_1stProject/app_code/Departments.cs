@@ -23,7 +23,8 @@ namespace my_1stProject.app_code
         {
             string query = "Update Department set Name='DepName' where id=@id";
             SqlCommand cmd = new SqlCommand(query, DBcon.con);
-            cmd.Parameters.AddWithValue("@DepName",DepName);
+            cmd.Parameters.AddWithValue("@id",id);
+            cmd.Parameters.AddWithValue("@DepName", DepName);
             DBcon.open();
             cmd.ExecuteReader();
             DBcon.close();

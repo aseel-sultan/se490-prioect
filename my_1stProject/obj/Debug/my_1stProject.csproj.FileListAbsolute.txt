@@ -49,3 +49,6 @@ C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1
 C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.usersPage.resources
 C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.Properties.Resources.resources
 C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.csproj.GenerateResource.Cache
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\DepartmentForm.UI.MessageFuns.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.DepForm.resources
+C:\Users\selfie\Desktop\SE490 Project\se490-prioect\my_1stProject\obj\Debug\my_1stProject.forms.ItemsSetting.resources

@@ -47,12 +47,6 @@
     <Compile Include="app_code\DBcon.cs" />
     <Compile Include="app_code\Departments.cs" />
     <Compile Include="app_code\users.cs" />
-    <Compile Include="forms\AddDep.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\AddDep.Designer.cs">
-      <DependentUpon>AddDep.cs</DependentUpon>
-    </Compile>
     <Compile Include="forms\addUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,9 +103,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="forms\AddDep.resx">
-      <DependentUpon>AddDep.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="forms\addUser.resx">
       <DependentUpon>addUser.cs</DependentUpon>
     </EmbeddedResource>
