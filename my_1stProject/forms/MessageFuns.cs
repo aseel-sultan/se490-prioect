@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace my_1stProject
+namespace DepartmentForm.UI
 {
-    public partial class Form1 : Form
+    public partial class MessageFuns : Form
     {
-        public Form1()
+        public MessageFuns()
         {
             InitializeComponent();
+        }
+
+        private void btnExist_Click(object sender, EventArgs e)
+        {
+            MessageFuns m = new MessageFuns();
+            m.Hide();
         }
     }
 }

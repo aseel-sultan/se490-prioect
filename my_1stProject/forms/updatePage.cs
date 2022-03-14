@@ -57,5 +57,10 @@ namespace my_1stProject.forms
         {
             Close();
         }
+
+        private void updatePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

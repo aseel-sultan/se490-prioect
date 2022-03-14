@@ -27,6 +27,13 @@ namespace my_1stProject.forms
 
         }
 
+        private void ItemSetting_Click(object sender, EventArgs e)
+        {
+            ItemsSetting Items = new ItemsSetting();
+            Items.Show();
+            this.Close();
+        }
+
        
 
 
