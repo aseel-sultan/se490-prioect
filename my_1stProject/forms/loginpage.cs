@@ -21,7 +21,7 @@ namespace my_1stProject.forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string Uname = nameText.Text.Trim();
+            int Unum =int.Parse( nameText.Text.Trim());
                         string password = passText.Text;
 
                         SqlCommand com = new SqlCommand();
@@ -36,18 +36,19 @@ namespace my_1stProject.forms
             if (rd.Read())
             {
                 // اذا كان الاسم والباسوورد صحيحات ينتقل الى الصفحة الرئيسية
-                if (Uname.Equals(rd["Uname"].ToString()) && password.Equals(rd["password"].ToString()))
+                if (Unum.Equals(rd["Unumber"]) && password.Equals(rd["password"].ToString()))
                 {
                     
                     mainPage main = new mainPage();
                     main.Show();
+                    this.Hide();
                    // Close();
                 }
 
 
 
                 else
-                    MessageBox.Show("يرجى التأكد من اسم المستخدم وكلمة المرور");
+                    MessageBox.Show("يرجى التأكد من رقم المستخدم وكلمة المرور");
 
             }
 

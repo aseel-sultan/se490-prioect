@@ -16,11 +16,11 @@ namespace my_1stProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-        //    Application.Run(new loginpage());
+           Application.Run(new loginpage());
 
             //Application.Run(new mainPage());
 
-          Application.Run(new usersPage());
+          //Application.Run(new usersPage());
        // Application.Run(new updatePage());
         }
     }

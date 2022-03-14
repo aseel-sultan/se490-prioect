@@ -58,7 +58,7 @@
             this.label2.Size = new System.Drawing.Size(180, 26);
             this.label2.TabIndex = 6;
             this.label2.Text = " رقم بطاقة المستخدم:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+//            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // number
             // 

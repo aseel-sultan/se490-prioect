@@ -69,5 +69,28 @@ namespace my_1stProject.app_code
             DBcon.close();
 
         }
+
+        public static Boolean search(int num)
+        {
+            String query = "select Unumber from users where Unumber=@num";
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(query, DBcon.con);
+
+            dataAdapter.SelectCommand.Parameters.AddWithValue("@num", num);
+
+            DataTable dt = new DataTable();
+            dataAdapter.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }//end search method
+
+
     }
+
 }

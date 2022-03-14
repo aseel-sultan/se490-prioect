@@ -17,17 +17,26 @@ namespace my_1stProject.forms
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
-            app_code.users.delete(int.Parse(number.Text));
-            MessageBox.Show("تم الحذف");
-            Close();
+            int num = int.Parse(number.Text);
+
+            Boolean check = app_code.users.search(num);
+
+            if (check == true)
+            {
+                app_code.users.delete(num);
+                MessageBox.Show("تم الحذف");
+                Close();
+            }
+
+            else
+            MessageBox.Show("فشل الحذف هذا المستخدم غير موجود");
+            
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {

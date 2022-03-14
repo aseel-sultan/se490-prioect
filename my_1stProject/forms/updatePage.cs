@@ -25,21 +25,34 @@ namespace my_1stProject.forms
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (pass.Text.Equals(pass2.Text) != true)
+            int num =int.Parse(number.Text.Trim());
 
-                MessageBox.Show("يرجى التأكد من تطابق كلمة المرور");
+            Boolean check = app_code.users.search(num);
 
+            if (check == true)
+            {
+                if (pass.Text.Equals(pass2.Text) != true)
+
+                    MessageBox.Show("يرجى التأكد من تطابق كلمة المرور");
+
+                else
+                {
+                    app_code.users.update(num, pass.Text);
+
+                    MessageBox.Show("تم التعديل");
+                    Close();
+
+                }
+            }
             else
             {
-               app_code.users.update(int.Parse(number.Text.Trim()), pass.Text);
-              
-                   MessageBox.Show("تم التعديل");
-                   Close();
-            
+                MessageBox.Show("فشل عملية التعديل هذا المستخدم غير موجود");
+
             }
+            
 
         }
-        //للتراجع
+        //للرجوع
         private void button2_Click(object sender, EventArgs e)
         {
             Close();

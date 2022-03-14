@@ -28,23 +28,35 @@ namespace my_1stProject.forms
             string password = pass1.Text;
             string password2 = pass2.Text;
 
-            if (password.Equals(password2) != true)
+
+            Boolean check = app_code.users.search(Num);
+            if (check == false)
             {
-                MessageBox.Show("يرجى التأكد من تطابق كلمة المرور");
+                    if (password.Equals(password2) != true)
+                     {
+                        MessageBox.Show("يرجى التأكد من تطابق كلمة المرور");
+
+                     }
+                  else
+                  {
+                       app_code.users.insert(Num, name, password);
+                        MessageBox.Show("تمت الاضافة بنجاح");
+                        Close();
+                   }
+            }// end if(check)
+
+            else 
+            {
+                MessageBox.Show("هذا المستخدم موجود لا يمكن اضافته");
 
             }
-            else
-            {
-                app_code.users.insert(Num, name, password);
-                MessageBox.Show("تمت الاضافة بنجاح");
-                Close();
-                
 
-
-            }
-
+           
 
         }
+
+
+
 
         private void back_Click(object sender, EventArgs e)
         {
