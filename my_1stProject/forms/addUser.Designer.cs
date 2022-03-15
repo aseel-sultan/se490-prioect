@@ -36,7 +36,7 @@
             this.uName = new System.Windows.Forms.TextBox();
             this.pass1 = new System.Windows.Forms.TextBox();
             this.pass2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -119,18 +119,18 @@
             this.pass2.TabIndex = 0;
             this.pass2.UseSystemPasswordChar = true;
             // 
-            // button2
+            // add
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(40, 76);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 58);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "اضافة";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.add.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.add.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add.Location = new System.Drawing.Point(40, 76);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(128, 58);
+            this.add.TabIndex = 2;
+            this.add.Text = "اضافة";
+            this.add.UseVisualStyleBackColor = false;
+            this.add.Click += new System.EventHandler(this.button2_Click);
             // 
             // back
             // 
@@ -152,7 +152,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(610, 404);
             this.Controls.Add(this.back);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -178,7 +178,7 @@
         private System.Windows.Forms.TextBox uName;
         private System.Windows.Forms.TextBox pass1;
         private System.Windows.Forms.TextBox pass2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button back;
     }
 }

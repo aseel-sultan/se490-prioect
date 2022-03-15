@@ -41,10 +41,10 @@
             this.btnAdd.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(843, 100);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdd.Location = new System.Drawing.Point(1264, 154);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(213, 87);
+            this.btnAdd.Size = new System.Drawing.Size(320, 134);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "إضافة";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -55,10 +55,10 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(195, 100);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(292, 154);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 87);
+            this.button1.Size = new System.Drawing.Size(320, 134);
             this.button1.TabIndex = 1;
             this.button1.Text = "حذف";
             this.button1.UseVisualStyleBackColor = false;
@@ -68,9 +68,10 @@
             this.lblItemsetting.AutoSize = true;
             this.lblItemsetting.BackColor = System.Drawing.Color.Transparent;
             this.lblItemsetting.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblItemsetting.Location = new System.Drawing.Point(543, 34);
+            this.lblItemsetting.Location = new System.Drawing.Point(814, 52);
+            this.lblItemsetting.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblItemsetting.Name = "lblItemsetting";
-            this.lblItemsetting.Size = new System.Drawing.Size(159, 32);
+            this.lblItemsetting.Size = new System.Drawing.Size(243, 51);
             this.lblItemsetting.TabIndex = 4;
             this.lblItemsetting.Text = "إعدادات الأقسام";
             this.lblItemsetting.Click += new System.EventHandler(this.lblItemsetting_Click);
@@ -80,10 +81,10 @@
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(520, 100);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(780, 154);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 87);
+            this.button2.Size = new System.Drawing.Size(320, 134);
             this.button2.TabIndex = 5;
             this.button2.Text = "تعديل";
             this.button2.UseVisualStyleBackColor = false;
@@ -93,10 +94,9 @@
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(195, 216);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(292, 332);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 57);
+            this.button3.Size = new System.Drawing.Size(152, 88);
             this.button3.TabIndex = 7;
             this.button3.Text = "رجوع";
             this.button3.UseVisualStyleBackColor = false;
@@ -104,18 +104,18 @@
             // 
             // DepForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(884, 661);
+            this.ClientSize = new System.Drawing.Size(1334, 1017);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lblItemsetting);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAdd);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "DepForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DepartmentsForm";

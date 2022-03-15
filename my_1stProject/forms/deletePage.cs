@@ -17,30 +17,46 @@ namespace my_1stProject.forms
             InitializeComponent();
         }
 
-       
+        usersPage UPage = new usersPage();
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num = int.Parse(number.Text);
-
-            Boolean check = app_code.users.search(num);
-
-            if (check == true)
-            {
-                app_code.users.delete(num);
-                MessageBox.Show("تم الحذف");
-                Close();
-            }
-
-            else
-            MessageBox.Show("فشل الحذف هذا المستخدم غير موجود");
             
-        }
+                try
+                {
+                    int num = int.Parse(number.Text);
+
+                    Boolean check = app_code.users.search(num);
+
+                    if (check == true)
+                    {
+                        app_code.users.delete(num);
+                        MessageBox.Show("تم الحذف");
+                        this.Close();
 
 
+                        UPage.Show();
+                    }
+
+                    else
+                        MessageBox.Show("فشل الحذف هذا المستخدم غير موجود");
+
+                }
+                catch(Exception ){
+                    MessageBox.Show("خطأ في الادخال يرجى اعادة المحاولة");
+
+                }
+                }
+               
+            
+           
+
+        //back button
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            UPage.Show();
+            this.Close();
         }
     }
 }

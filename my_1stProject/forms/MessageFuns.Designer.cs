@@ -37,9 +37,10 @@
             this.lblDepname.AutoSize = true;
             this.lblDepname.BackColor = System.Drawing.Color.Transparent;
             this.lblDepname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepname.Location = new System.Drawing.Point(88, 90);
+            this.lblDepname.Location = new System.Drawing.Point(132, 138);
+            this.lblDepname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDepname.Name = "lblDepname";
-            this.lblDepname.Size = new System.Drawing.Size(107, 20);
+            this.lblDepname.Size = new System.Drawing.Size(160, 29);
             this.lblDepname.TabIndex = 6;
             this.lblDepname.Text = "تمت الإضافة بنجاح";
             // 
@@ -48,9 +49,10 @@
             this.btnExist.BackColor = System.Drawing.Color.Black;
             this.btnExist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExist.ForeColor = System.Drawing.Color.White;
-            this.btnExist.Location = new System.Drawing.Point(116, 126);
+            this.btnExist.Location = new System.Drawing.Point(174, 194);
+            this.btnExist.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExist.Name = "btnExist";
-            this.btnExist.Size = new System.Drawing.Size(58, 29);
+            this.btnExist.Size = new System.Drawing.Size(87, 45);
             this.btnExist.TabIndex = 7;
             this.btnExist.Text = "خروج";
             this.btnExist.UseVisualStyleBackColor = false;
@@ -58,12 +60,13 @@
             // 
             // MessageFuns
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(433, 402);
             this.Controls.Add(this.btnExist);
             this.Controls.Add(this.lblDepname);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MessageFuns";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "رسالة تأكيد";

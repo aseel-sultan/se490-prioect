@@ -16,6 +16,8 @@ namespace my_1stProject.forms
         {
             InitializeComponent();
         }
+        usersPage UPage = new usersPage();
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -24,38 +26,49 @@ namespace my_1stProject.forms
         //للتعديل
         private void button1_Click(object sender, EventArgs e)
         {
+            try{
+                int num = int.Parse(number.Text.Trim());
 
-            int num =int.Parse(number.Text.Trim());
+                Boolean check = app_code.users.search(num);
 
-            Boolean check = app_code.users.search(num);
+                if (check == true)
+                {
+                    if (pass.Text.Equals(pass2.Text) != true)
 
-            if (check == true)
-            {
-                if (pass.Text.Equals(pass2.Text) != true)
+                        MessageBox.Show("يرجى التأكد من تطابق كلمة المرور");
 
-                    MessageBox.Show("يرجى التأكد من تطابق كلمة المرور");
+                    else
+                    {
+                        app_code.users.update(num, pass.Text);
 
+                        MessageBox.Show("تم التعديل");
+                        this.Close();
+
+
+                        UPage.Show();
+
+                    }
+                }
                 else
                 {
-                    app_code.users.update(num, pass.Text);
-
-                    MessageBox.Show("تم التعديل");
-                    Close();
+                    MessageBox.Show("فشل عملية التعديل هذا المستخدم غير موجود");
 
                 }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("فشل عملية التعديل هذا المستخدم غير موجود");
+                MessageBox.Show("خطأ في الادخال يرجى اعادة المحاولة");
 
             }
+            
             
 
         }
         //للرجوع
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            UPage.Show();
+            this.Close();
         }
 
         private void updatePage_Load(object sender, EventArgs e)

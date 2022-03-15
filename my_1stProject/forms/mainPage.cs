@@ -16,7 +16,7 @@ namespace my_1stProject.forms
         {
             InitializeComponent();
         }
-       //اذا تم الضغد على زر اعدادات المستخدمين ينتقل الى صفحة المستخدمين
+       //اذا تم الضغط على زر اعدادات المستخدمين ينتقل الى صفحة المستخدمين
         private void Usetting_Click(object sender, EventArgs e)
         {
             Close();

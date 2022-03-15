@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+
 namespace my_1stProject.forms
 {
     public partial class loginpage : Form
@@ -21,41 +22,41 @@ namespace my_1stProject.forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int Unum =int.Parse( nameText.Text.Trim());
-                        string password = passText.Text;
 
-                        SqlCommand com = new SqlCommand();
-
-                        app_code.DBcon.open();
-                        com.Connection = app_code.DBcon.con;
-
-            com.CommandText="select * from users ";
-
-            SqlDataReader rd = com.ExecuteReader();
-
-            if (rd.Read())
+            try
             {
-                // اذا كان الاسم والباسوورد صحيحات ينتقل الى الصفحة الرئيسية
-                if (Unum.Equals(rd["Unumber"]) && password.Equals(rd["password"].ToString()))
+                int Unum = int.Parse(nameText.Text.Trim());
+                string password = passText.Text;
+
+
+
+
+                String query = "select Unumber from users where Unumber=@Unum and password=@password";
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, app_code.DBcon.con);
+
+                dataAdapter.SelectCommand.Parameters.AddWithValue("@Unum", Unum);
+                dataAdapter.SelectCommand.Parameters.AddWithValue("@password", password);
+
+                DataTable dt = new DataTable();
+                dataAdapter.Fill(dt);
+
+                if (dt.Rows.Count > 0)
                 {
-                    
                     mainPage main = new mainPage();
-                    main.Show();
-                    this.Hide();
-                   // Close();
+                                main.Show();
+                               this.Hide();
+                                 
                 }
-
-
-
                 else
+                {
                     MessageBox.Show("يرجى التأكد من رقم المستخدم وكلمة المرور");
-
+                }
             }
-
-
-
-            app_code.DBcon.close();
-
+            catch (Exception)
+            {
+                MessageBox.Show("خطأ في الادخال يرجى اعادة المحاولة");
+            }
+           
 
                       
 

@@ -69,7 +69,7 @@ namespace my_1stProject.app_code
             DBcon.close();
 
         }
-
+        //search method return true if the user is found or false if not found
         public static Boolean search(int num)
         {
             String query = "select Unumber from users where Unumber=@num";
@@ -91,6 +91,15 @@ namespace my_1stProject.app_code
         }//end search method
 
 
+        //view method
+        public static DataTable selectData()
+        {
+            DataTable dt = new DataTable();
+            string query = "select Unumber,Uname,password from users";
+            SqlDataAdapter da = new SqlDataAdapter(query, DBcon.con);
+            da.Fill(dt);
+            return dt;
+        }
     }
 
 }

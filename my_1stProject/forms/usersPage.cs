@@ -21,38 +21,44 @@ namespace my_1stProject.forms
         {
             addUser add = new addUser();
             add.Show();
+            this.Hide();
+
         }
 
         private void update_Click(object sender, EventArgs e)
         {
             updatePage update = new updatePage();
             update.Show();
+            this.Hide();
         }
 
         private void delete_Click(object sender, EventArgs e)
         {
             deletePage delete = new deletePage();
             delete.Show();
-        }
+            this.Hide();
 
+        }
+        //back button
         private void button1_Click(object sender, EventArgs e)
         {
 
-            // في مشكلة ان لما درت عرض هكي قعدت شاشة اليوزرس ماتسكرش 
-         
-           //ولما درت كلوز بعدها وجربت حتى قبلها قعدت تسكر وماتعرضش 
+             
             mainPage main = new mainPage();
              main.Show();
               this.Hide();
            
-            // استخدمت hide  عشان تسكر وتفتح اللي بعدها
+            // استخدمت hide  عشان تسكر وتفتح الرئسيسه
            
         }
 
         private void usersPage_Load(object sender, EventArgs e)
         {
-
+            DataTable dt = app_code.users.selectData();
+            dataGridUsers.DataSource = dt;
         }
+
+        
 
     }
 }
